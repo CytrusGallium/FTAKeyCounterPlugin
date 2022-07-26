@@ -17,7 +17,7 @@ namespace FTAKeyCounter
         private static bool waitingRightUp = false;
         private static int leftClickCounter = 0;
         private static int rightClickCounter = 0;
-        private static Thread clickCountThread;
+        private static Thread clickCountThread = new Thread(ClickCountThread);
 
         [DllImport("user32.dll")]
         static extern short GetAsyncKeyState(int VirtualKeyPressed);
@@ -58,8 +58,15 @@ namespace FTAKeyCounter
         /// </summary>
         public static void StartMouseClickCounter()
         {
-            clickCountThread = new Thread(ClickCountThread);
             clickCountThread.Start();
+        }
+
+        /// <summary>
+        /// Stop mouse click counter thread.
+        /// </summary>
+        public static void StopMouseClickCounter()
+        {
+            clickCountThread.Abort();
         }
 
         private static void ClickCountThread()
