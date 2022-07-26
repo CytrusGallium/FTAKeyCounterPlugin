@@ -1,0 +1,8 @@
+C:\FocusTimeAccumulator\FTAKeyCounter\FTAKeyCounter\FTAKeyCounter\bin\Debug\FTAKeyCounter.dll
+C:\FocusTimeAccumulator\FTAKeyCounter\FTAKeyCounter\FTAKeyCounter\bin\Debug\FTAKeyCounter.pdb
+C:\FocusTimeAccumulator\FTAKeyCounter\FTAKeyCounter\FTAKeyCounter\bin\Debug\FocusTimeAccumulator.dll
+C:\FocusTimeAccumulator\FTAKeyCounter\FTAKeyCounter\FTAKeyCounter\obj\Debug\FTAKeyCounter.csproj.AssemblyReference.cache
+C:\FocusTimeAccumulator\FTAKeyCounter\FTAKeyCounter\FTAKeyCounter\obj\Debug\FTAKeyCounter.csproj.CoreCompileInputs.cache
+C:\FocusTimeAccumulator\FTAKeyCounter\FTAKeyCounter\FTAKeyCounter\obj\Debug\FTAKeyCounter.csproj.CopyComplete
+C:\FocusTimeAccumulator\FTAKeyCounter\FTAKeyCounter\FTAKeyCounter\obj\Debug\FTAKeyCounter.dll
+C:\FocusTimeAccumulator\FTAKeyCounter\FTAKeyCounter\FTAKeyCounter\obj\Debug\FTAKeyCounter.pdb
