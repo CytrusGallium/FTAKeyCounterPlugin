@@ -34,19 +34,29 @@ namespace FTAKeyCounter
         public override void ModifyPoolAppUpdate(PoolApp.AppSpan packet)
         {
             Console.WriteLine("!! MODIFICATION EVENT !!");
-            //Console.WriteLine(MouseClickCounter.ConsumeLeftClickCount());
-            //Console.WriteLine(MouseClickCounter.ConsumeRightClickCount());
-            
+            int leftConsume = MouseClickCounter.ConsumeLeftClickCount();
+            int rightConsume = MouseClickCounter.ConsumeRightClickCount();
+            Console.WriteLine("TARGET = " + packet.pageTitle);
+            Console.WriteLine("LEFT = " + leftConsume);
+            Console.WriteLine("RIGHT = " + rightConsume);
+
             int lmb = 0;
             if (packet.stats.ContainsKey("lmb"))
                 lmb = packet.stats["lmb"].value;
 
+            Console.WriteLine("LMB-STAT = " + lmb);
+
             int rmb = 0;
             if (packet.stats.ContainsKey("rmb"))
-                lmb = packet.stats["rmb"].value;
+                rmb = packet.stats["rmb"].value;
 
-            packet.AddStat("lmb", lmb + MouseClickCounter.ConsumeLeftClickCount());
-            packet.AddStat("rmb", rmb + MouseClickCounter.ConsumeRightClickCount());
+            Console.WriteLine("RMB-STAT = " + rmb);
+
+            packet.AddStat("lmb", lmb + leftConsume);
+            packet.AddStat("rmb", rmb + rightConsume);
+
+            Console.WriteLine("POST-LMB-STAT = " + packet.stats["lmb"].value);
+            Console.WriteLine("POST-RMB-STAT = " + packet.stats["rmb"].value);
         }
     }
 }
