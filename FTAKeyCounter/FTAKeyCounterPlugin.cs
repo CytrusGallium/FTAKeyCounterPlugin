@@ -28,9 +28,6 @@ namespace FTAKeyCounter
 
             packet.AddStat("lmb", leftConsume);
             packet.AddStat("rmb", rightConsume);
-
-            Console.WriteLine("POST-LMB-STAT = " + packet.stats["lmb"].value);
-            Console.WriteLine("POST-RMB-STAT = " + packet.stats["rmb"].value);
         }
     }
 }
