@@ -13,6 +13,8 @@ namespace FTAKeyCounter
         const Int32 LEFT_MOUSE_BUTTON = 0x01;
         const Int32 RIGHT_MOUSE_BUTTON = 0x02;
 
+        const Int32 KEY_CHECK_PERIOD = 16; // 16 Milliseconds is 62 FPS approx.
+
         private static bool waitingLeftUp = false;
         private static bool waitingRightUp = false;
         private static int leftClickCounter = 0;
@@ -74,6 +76,7 @@ namespace FTAKeyCounter
             while(true)
             {
                 UpdateClickCounters();
+                Thread.Sleep(KEY_CHECK_PERIOD);
             }
         }
 
