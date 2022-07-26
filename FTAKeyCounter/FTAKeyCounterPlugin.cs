@@ -15,19 +15,16 @@ namespace FTAKeyCounter
             Console.WriteLine("+----------------------------+");
 
             MouseClickCounter.StartMouseClickCounter();
+
         }
-
-        public override void ModifyPoolAppUpdate(PoolApp.AppSpan packet)
+        public override void ModifyPoolAppUpdate( PoolApp.AppSpan packet )
         {
-            //Console.WriteLine("!! MODIFICATION EVENT !!");
-            int leftConsume = MouseClickCounter.ConsumeLeftClickCount();
-            int rightConsume = MouseClickCounter.ConsumeRightClickCount();
-            //Console.WriteLine("TARGET = " + packet.pageTitle);
-            //Console.WriteLine("LEFT = " + leftConsume);
-            //Console.WriteLine("RIGHT = " + rightConsume);
-
-            packet.AddStat("lmb", leftConsume);
-            packet.AddStat("rmb", rightConsume);
+            //consume clicks
+            int leftConsume = MouseClickCounter.ConsumeLeftClickCount( );
+            int rightConsume = MouseClickCounter.ConsumeRightClickCount( );
+            //add clicks to data packet
+            packet.AddStat( "lmb", leftConsume );
+            packet.AddStat( "rmb", rightConsume );
         }
     }
 }

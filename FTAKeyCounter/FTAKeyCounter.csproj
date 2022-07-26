@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FTAKeyCounterPlugin.cs" />
+    <Compile Include="KeyStateManager.cs" />
     <Compile Include="MouseClickCounter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
