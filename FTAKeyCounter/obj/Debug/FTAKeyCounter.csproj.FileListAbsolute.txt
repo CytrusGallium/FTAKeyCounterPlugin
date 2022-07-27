@@ -13,3 +13,6 @@ C:\FocusTimeAccumulator\FTAKeyCounter\FTAKeyCounterPlugin\FTAKeyCounter\obj\Debu
 C:\FocusTimeAccumulator\FTAKeyCounter\FTAKeyCounterPlugin\FTAKeyCounter\obj\Debug\FTAKeyCounter.csproj.CopyComplete
 C:\FocusTimeAccumulator\FTAKeyCounter\FTAKeyCounterPlugin\FTAKeyCounter\obj\Debug\FTAKeyCounter.dll
 C:\FocusTimeAccumulator\FTAKeyCounter\FTAKeyCounterPlugin\FTAKeyCounter\obj\Debug\FTAKeyCounter.pdb
+C:\FocusTimeAccumulator\FTAKeyCounter\FTAKeyCounterPlugin\FTAKeyCounter\bin\Debug\FocusTimeAccumulator.dll
+C:\FocusTimeAccumulator\FTAKeyCounter\FTAKeyCounterPlugin\FTAKeyCounter\bin\Debug\Newtonsoft.Json.dll
+C:\FocusTimeAccumulator\FTAKeyCounter\FTAKeyCounterPlugin\FTAKeyCounter\bin\Debug\FocusTimeAccumulator.pdb
