@@ -17,7 +17,8 @@ namespace FTAKeyCounter
             MouseClickCounter.StartMouseClickCounter();
 
         }
-        public override void ModifyPoolAppUpdate( PoolApp.AppSpan packet )
+
+        void DoClickCountAdd (PoolApp.AppSpan packet) 
         {
             //consume clicks
             int leftConsume = MouseClickCounter.ConsumeLeftClickCount( );
@@ -25,6 +26,16 @@ namespace FTAKeyCounter
             //add clicks to data packet
             packet.AddStat( "lmb", leftConsume );
             packet.AddStat( "rmb", rightConsume );
+        }
+
+        public override void ModifyPoolAppUpdate( PoolApp.AppSpan packet )
+        {
+            DoClickCountAdd( packet );   
+        }
+
+        public override void ModifyPoolAppCreation( PoolApp.AppSpan packet ) 
+        {
+            DoClickCountAdd( packet );
         }
     }
 }

@@ -8,7 +8,6 @@ C:\FocusTimeAccumulator\FTAKeyCounter\FTAKeyCounter\FTAKeyCounter\obj\Debug\FTAK
 C:\FocusTimeAccumulator\FTAKeyCounter\FTAKeyCounter\FTAKeyCounter\obj\Debug\FTAKeyCounter.pdb
 C:\FocusTimeAccumulator\FTAKeyCounter\FTAKeyCounterPlugin\FTAKeyCounter\bin\Debug\FTAKeyCounter.dll
 C:\FocusTimeAccumulator\FTAKeyCounter\FTAKeyCounterPlugin\FTAKeyCounter\bin\Debug\FTAKeyCounter.pdb
-C:\FocusTimeAccumulator\FTAKeyCounter\FTAKeyCounterPlugin\FTAKeyCounter\bin\Debug\FocusTimeAccumulator.dll
 C:\FocusTimeAccumulator\FTAKeyCounter\FTAKeyCounterPlugin\FTAKeyCounter\obj\Debug\FTAKeyCounter.csproj.AssemblyReference.cache
 C:\FocusTimeAccumulator\FTAKeyCounter\FTAKeyCounterPlugin\FTAKeyCounter\obj\Debug\FTAKeyCounter.csproj.CoreCompileInputs.cache
 C:\FocusTimeAccumulator\FTAKeyCounter\FTAKeyCounterPlugin\FTAKeyCounter\obj\Debug\FTAKeyCounter.csproj.CopyComplete
